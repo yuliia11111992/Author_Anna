@@ -233,6 +233,7 @@ body::before {
 
 /* Hero right */
 .author-hero-right {
+  width: 350px;
   position: relative;
   animation: author-fadeIn 1.2s ease-out 0.3s both;
 }
@@ -286,18 +287,18 @@ body::before {
 }
 
 .avatar-blur-frame {
-            position: absolute;
-            top: -14px;
-            left: 30px;
-            width: 350px;
-            height: 350px;
-            border-radius: 50%;
-            background-image: url(../photo/AnnaMolchanova.png);
-            background-size: cover;
-            background-position: center;
-            filter: blur(8px);
-            z-index: 1;
-        }
+  position: absolute;
+  top: -14px;
+  left: 30px;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-image: url(../photo/AnnaMolchanova.png);
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: 1;
+  }
 
 /* About Section */
 .author-about {
