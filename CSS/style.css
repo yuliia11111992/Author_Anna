@@ -107,6 +107,18 @@ body::before {
   width: 100%;
 }
 
+.author-hero-content::before {
+  content: '';
+  width: 60%;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: linear-gradient(135deg, var(--red) 0%, transparent 100%);
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  opacity: 0.2;
+  animation: author-morph 8s ease-in-out infinite;
+}
 .author-hero-left {
   animation: author-slideInLeft 1s ease-out;
 }
@@ -253,7 +265,7 @@ body::before {
   
 }
 
-.author-profile-image-wrapper::before {
+/* .author-profile-image-wrapper::before {
   content: '';
   position: absolute;
   top: -20px;
@@ -264,7 +276,7 @@ body::before {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   opacity: 0.2;
   animation: author-morph 8s ease-in-out infinite;
-}
+} */
 
 @keyframes author-morph {
   0%, 100% {
