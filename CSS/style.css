@@ -292,7 +292,7 @@ body::before {
             width: 350px;
             height: 350px;
             border-radius: 50%;
-            background-image: url(/photo/Image\ 28\ окт.\ 2025\ г.\,\ 17_50_23.png);
+            background-image: url(photo/Image\ 28\ окт.\ 2025\ г.\,\ 17_50_23.png);
             background-size: cover;
             background-position: center;
             filter: blur(8px);
