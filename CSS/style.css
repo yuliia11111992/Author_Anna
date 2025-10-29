@@ -29,7 +29,6 @@ body {
   position: relative;
 }
 
-/* Grid background effect */
 body::before {
   content: '';
   position: fixed;
@@ -92,16 +91,14 @@ body::before {
 
 /* Hero Section */
 .author-hero {
-  min-height: 100vh;
-  display: flex;
+display: flex;
   align-items: center;
   position: relative;
   padding: 100px 0;
 }
 
 .author-hero-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 100px;
   align-items: center;
   width: 100%;
@@ -121,6 +118,7 @@ body::before {
 }
 .author-hero-left {
   animation: author-slideInLeft 1s ease-out;
+  width: 55%;
 }
 
 @keyframes author-slideInLeft {
@@ -265,18 +263,6 @@ body::before {
   
 }
 
-/* .author-profile-image-wrapper::before {
-  content: '';
-  position: absolute;
-  top: -20px;
-  left: -20px;
-  right: -20px;
-  bottom: -20px;
-  background: linear-gradient(135deg, var(--red) 0%, transparent 100%);
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  opacity: 0.2;
-  animation: author-morph 8s ease-in-out infinite;
-} */
 
 @keyframes author-morph {
   0%, 100% {
@@ -328,8 +314,7 @@ body::before {
 }
 
 .author-about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 80px;
   align-items: start;
 }
@@ -401,14 +386,9 @@ body::before {
   line-height: 1.6;
 }
 
-/* Experience Section */
-.author-experience {
-  padding: 120px 0;
-}
 
 .author-experience-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 30px;
   margin-top: 60px;
 }
@@ -621,8 +601,8 @@ body::before {
 }
 
 .author-profile-image-wrapper2 {
-  width: 300px;
-  height: 300px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto; /* Центрирование */
 }
 
@@ -639,7 +619,7 @@ body::before {
   animation: author-morph 8s ease-in-out infinite;
 }
 /* Responsive Footer */
-@media (max-width: 640px) {
+@media (max-width: 720px) {
   .author-footer {
     padding: 50px 0;
   }
@@ -647,4 +627,26 @@ body::before {
   .author-footer p {
     font-size: 0.8rem;
   }
+
+  .author-hero-content::before {
+    display: none;
+  }
+
+  .author-hero-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .author-about-content {
+    flex-direction: column;
+  }
+
+  .author-experience-grid {
+    flex-direction: column;
+  }
+
+  .author-hero-left{
+    width: 100%;
+  }
 }
+
