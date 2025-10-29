@@ -663,8 +663,8 @@ display: flex;
 
   .author-hero-stats {
   gap: 30px;
-  flex-direction: column;
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .author-hero-left h1 {
@@ -672,12 +672,10 @@ display: flex;
 }
 
 .author-accent {
-  
   font-size: 2rem;
 }
 
 .author-container {
-
   padding: 0 20px;
 }
 
