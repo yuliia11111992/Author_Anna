@@ -707,6 +707,7 @@ display: flex;
 
 .author-profile-image-wrapper {
   width: 260px;
+  margin: 0 auto;
 }
 
 .author-section-title{
