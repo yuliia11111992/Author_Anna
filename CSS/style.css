@@ -156,6 +156,10 @@ display: flex;
   font-weight: 700;
 }
 
+.author-stat {
+    text-align: center;
+}
+
 .author-hero-subtitle {
   font-size: 1.3rem;
   color: var(--gray-300);
@@ -170,9 +174,6 @@ display: flex;
   margin-bottom: 50px;
 }
 
-.author-stat {
-  position: relative;
-}
 
 .author-stat-number {
   font-size: 2rem;
@@ -678,7 +679,22 @@ display: flex;
 }
 
 .author-profile-image-wrapper2 {
-  width: 100px;
+  max-width: 90%;
   margin: 0 auto;
+}
+
+.avatar-blur-frame {
+  display: none;
+}
+
+.author-social-links {
+  display: flex;
+  gap: 15px;
+ justify-content: center;
+
+}
+
+.author-profile-image-wrapper {
+  width: 260px;
 }
 }
